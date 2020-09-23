@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Tahoma';
+    font-family: 'Minion';
+    font-family: 'Roboto';
+    font-size: 10px;
+  }
+  
+  a,
+  button,
+  input,
+  textarea:active,
+  :hover,
+  :focus {
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: none;
+  }
+  
+  body {
+    background: #fff;
+    color: #000;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+.header__navbar {
+background: #af9559;
+}
+
+.header__town {
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    }
+.header__phone {
+    display: flex;
+    justify-content: space-around;
+}
+.header__menu {
+    display: flex;
+    justify-content: space-around;
+}
+.header__soc {
+    display: flex;
+    justify-content: space-around;
+}
