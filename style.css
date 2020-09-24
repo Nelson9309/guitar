@@ -133,7 +133,25 @@ nav ul li ul:hover {
     visibility: visible;
     display: block;
 }
+.header__foot ul li:nth-child(2) {
+    display: block;
+    position: relative;
+    transition-duration: 1s;
+}
 
+.tabs__menu {
+    visibility: hidden;
+    position: absolute;
+    transition: all 0.5s ease;
+    display: none;
+    z-index: 20;
+}
+
+.header__foot ul li:nth-child(2):hover>.tabs__menu,
+.tabs__menu :hover{
+    visibility: visible;
+    display: block;
+}
 .header__basket {
     display: block;
     position: relative;
@@ -160,7 +178,9 @@ nav ul li ul:hover {
     right: 0;
     z-index: 15;
 }
-
+.fa-phone-alt {
+    margin-right: 5px;
+    }
 .fa-shopping-basket {
     margin-right: 10px;
 }
@@ -418,4 +438,113 @@ i.fas:nth-child(2) {
 
 .slider__body {
     text-align: center;
+}
+.tab {
+    float: left;
+    width: 250px;
+   height: 524px;
+   background-color:#000;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.863);
+    color: #e0e0e0;
+    padding: 22px 16px;
+    font-family: 'Tahoma';
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.8rem; 
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #af95599a;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #af9559;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 30px 30px;
+    width: 445px;
+    height: 464px;
+    background: #af9559;
+    font-family: 'Tahoma';
+}
+.tab__item ul li  a{
+    color: #e0e0e0;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.tab__item ul li{
+    margin-bottom: 10px;
+}
+.tab__item ul li::before{
+        color: #ccc;
+        content: "•"; 
+        padding-right: 10px;
+       font-size: 1.6rem;
+}
+.tab__item{
+    display: flex;
+    justify-content: space-around;
+}
+.tab__img a{
+    font-size: 1.6rem;
+    color: #4e4b46;
+    margin-top: 50px;
+    margin-left: -100px;
+}
+.tab__img p{
+    font-size: 1.2rem;
+    color: #4e4b46;
+    margin-bottom: 10px;
+    line-height: 2;
+    margin-left: 40px;
+}
+.tab__img{
+    text-align: center;
+    border-left: 1px solid #5037378a;
+    padding-left: 10px;
+}
+.tab__img img{
+    padding-left: 40px;
+    margin-bottom: 50px;
+    padding-left: 40px;
+}
+.tab__text h6{
+    color: red;
+    font-size: 1.8rem;
+    
+}
+.tab__text h5{
+    color: #777777;
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+.tab__text{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 5px;
+    align-items: center;
+    margin-left: 40px;
+}
+.header__foot ul li a:active{
+    background: rgb(255, 0, 0);
+    padding: 10px;
+    border-radius: 50px;
+    color: #fff;
 }
