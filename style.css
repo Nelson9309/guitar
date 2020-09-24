@@ -80,11 +80,13 @@ nav {
 .header__soc {
     font-size: 1.4rem;
     align-items: center;
-        display: flex;
+    display: flex;
 }
+
 .header__soc a {
     margin-right: 0px;
-    }
+}
+
 .header__soc a:nth-child(1) {
     font-size: 1.4rem;
     color: #fff;
@@ -93,6 +95,7 @@ nav {
     border-bottom: 1px dotted;
     margin-right: 10px;
 }
+
 .fa,
 .fas {
     font-size: 1.4rem;
@@ -127,6 +130,48 @@ nav ul li ul {
 
 nav ul li:hover>ul,
 nav ul li ul:hover {
+    visibility: visible;
+    display: block;
+}
+
+.header__basket {
+    display: block;
+    position: relative;
+    transition-duration: 1s;
+}
+
+.header__basket ul {
+    background: rgb(0, 0, 0);
+    visibility: hidden;
+    position: absolute;
+    transition: all 0.5s ease;
+    display: none;
+    padding: 20px 10px 20px 10px;
+}
+
+.header__basket ul li {
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+.header__basket ul {
+    top: 90%;
+    right: 0;
+    z-index: 15;
+}
+
+.fa-shopping-basket {
+    margin-right: 10px;
+}
+
+.header__basket ul li a {
+    font-size: 1.4rem;
+    color: rgb(158, 158, 158);
+}
+
+.header__basket:hover>ul,
+.header__basket ul:hover {
     visibility: visible;
     display: block;
 }
@@ -227,12 +272,15 @@ i.fas:nth-child(2) {
 }
 
 .slider__wrap {
-    padding: 121px 0 168px 0;
     z-index: 10;
-    position: absolute;
-    top: -5%;
-    margin-left: 1337px;
     text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 52.7%;
+}
+
+.filter {
+    position: relative;
 }
 
 .filter h1 {
@@ -343,26 +391,31 @@ i.fas:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 48%;
 }
 
 .slider .slick-dots li {
     list-style: none;
-    margin: 0px 10px;
+    margin: 0px 7px;
 }
 
 .slider .slick-dots button {
     font-size: 0;
-    width: 10px;
-    height: 10px;
-    background-color: rgb(255, 0, 0);
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #737377;
     border-radius: 50%;
     outline: none;
 }
 
 .slider .slick-dots li.slick-active button {
-    background-color: transparent;
-    border: 1px solid rgb(255, 0, 0);
+    background-color: #ff0000;
+    border: 3px solid #737377;
 }
-.slider__body{
+
+.slider__body {
     text-align: center;
 }
