@@ -78,28 +78,24 @@ nav {
 }
 
 .header__soc {
-    display: flex;
-    justify-content: space-around;
     font-size: 1.4rem;
+    align-items: center;
+        display: flex;
 }
-
+.header__soc a {
+    margin-right: 0px;
+    }
 .header__soc a:nth-child(1) {
     font-size: 1.4rem;
     color: #fff;
     font-family: 'Tahoma';
     text-decoration: none;
     border-bottom: 1px dotted;
+    margin-right: 10px;
 }
-
 .fa,
 .fas {
     font-size: 1.4rem;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.header__soc a {
-    margin-right: 18px;
 }
 
 .header__menu a {
@@ -110,6 +106,29 @@ nav {
     text-decoration: none;
     border-bottom: 1px dotted;
 
+}
+
+nav ul li {
+    display: block;
+    padding: 10px 10px 15px 5px;
+    position: relative;
+    transition-duration: 1s;
+}
+
+nav ul li ul {
+    background: #000000;
+    visibility: hidden;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+    left: 5%;
+    display: none;
+}
+
+nav ul li:hover>ul,
+nav ul li ul:hover {
+    visibility: visible;
+    display: block;
 }
 
 .header__body {
@@ -207,39 +226,44 @@ i.fas:nth-child(2) {
     border-top: 1px solid #d9d9d9;
 }
 
-.slider__wrap{
-   padding:121px 0 168px 0;
-   z-index: 10;
-   position: absolute;
-   top: 25%;
-   margin-left: 537px;
+.slider__wrap {
+    padding: 121px 0 168px 0;
+    z-index: 10;
+    position: absolute;
+    top: -5%;
+    margin-left: 1337px;
+    text-align: left;
 }
-.filter h1{
+
+.filter h1 {
     text-transform: uppercase;
     color: #fff;
     font-size: 4rem;
     margin-bottom: 25px;
-    
+
 }
-.filter p{
+
+.filter p {
     font-size: 1.4rem;
-    color:#fff;
+    color: #fff;
     line-height: 2.1;
 }
-.filter h4{
+
+.filter h4 {
     font-size: 1.7rem;
     color: #999;
     margin-bottom: 20px;
-    
+
 }
-.filter img{
+
+.filter img {
     height: 464px;
     z-index: 2;
     position: relative;
-    width: 1000px;
+    width: 1200px;
 }
-* Слайдер
-.slick-slider {
+
+* Слайдер .slick-slider {
     min-width: 0;
     outline: none;
 }
@@ -330,12 +354,15 @@ i.fas:nth-child(2) {
     font-size: 0;
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: rgb(255, 0, 0);
     border-radius: 50%;
     outline: none;
 }
 
 .slider .slick-dots li.slick-active button {
     background-color: transparent;
-    border: 1px solid #fff;
-} 
+    border: 1px solid rgb(255, 0, 0);
+}
+.slider__body{
+    text-align: center;
+}
