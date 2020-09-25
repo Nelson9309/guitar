@@ -151,9 +151,12 @@ nav ul li ul:hover {
 .header__foot ul li:nth-child(2):active>.tabs__menu,
 .tabs__menu :active {
     visibility: visible;
-    display: block;
+    display: flex;
 }
-
+.tab__item ul{
+    display: flex;
+    flex-direction: column;
+}
 .header__basket {
     display: block;
     position: relative;
