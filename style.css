@@ -146,14 +146,18 @@ nav ul li ul:hover {
     transition: all 0.5s ease;
     display: none;
     z-index: 20;
+    margin-top: 25px;
 }
 
 .header__foot ul li:nth-child(2):active>.tabs__menu,
 .tabs__menu :active {
     visibility: visible;
-    display: block;
+    display: flex;
 }
-
+.tab__item ul{
+    display: flex;
+    flex-direction: column;
+}
 .header__basket {
     display: block;
     position: relative;
